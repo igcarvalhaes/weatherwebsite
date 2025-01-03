@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weather App</title>
+  </head>
+  <body
+    class="bg-blue-500 flex flex-col items-center justify-center min-h-screen"
+  >
+    <div class="mb-4 text-2xl font-bold text-slate-100">
+      Como está o tempo?!
+    </div>
+    <div class="text-center p-6 px-6 bg-white rounded-xl shadow-lg">
+      <div class="flex items-center gap-2">
+        <input
+          placeholder="Nome da cidade"
+          type="search"
+          name="busca"
+          id="busca"
+          class="bg-slate-300 rounded-lg focus:outline-none"
+        />
+        <button id="btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-search"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
+        </button>
+      </div>
+      <div id="weatherContainer"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
