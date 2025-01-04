@@ -1,5 +1,7 @@
 # Weather App
 
+You can check the video of [me doing the project in live here](https://www.twitch.tv/videos/2343251176).
+
 ### Features
 
 - **City Input**: Users can input the name of a city.
