@@ -27,6 +27,13 @@
    git clone https://github.com/yourusername/weather-app.git
    ```
 
+### Screenshots
+
+![inputcity](img/01.png)<br>
+![displayweather](img/02.png)
+
+---
+
 # Aplicativo de Clima
 
 ### Funcionalidades
