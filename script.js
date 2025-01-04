@@ -101,6 +101,25 @@ const getTemp = async (city) => {
       
       `;
   } catch (error) {
+    const containerTemp = document.querySelector("#weatherContainer");
+    containerTemp.classList.add(
+      "mt-8",
+      "flex",
+      "justify-between",
+      "items-center",
+      "gap-2"
+    );
+    containerTemp.innerHTML = `
+      <div class="imgweather h-full w-1/2">
+         <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ban text-slate-400"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></svg>
+        </div>
+        <div class="bg-slate-100 w-1 h-20"></div>
+        <div class="weatherinfo">
+          <h3 id="currentCity" class="text-slate-400">Cidade Inválida</h3>
+          
+        </div>
+      
+      `;
     console.log(error);
   }
 };
