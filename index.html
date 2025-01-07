@@ -8,19 +8,37 @@
     <title>Weather App</title>
   </head>
   <body
-    class="bg-blue-500 flex flex-col items-center justify-center min-h-screen"
+    class="bg-gradient-to-br from-blue-100 to-blue-400 flex flex-col items-center justify-center min-h-screen"
   >
-    <div class="mb-4 text-2xl font-bold text-slate-100">
-      Como está o tempo?!
+    <div class="flex items-center justify-center gap-2 mb-4">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="48"
+        height="48"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-cloud-rain text-blue-600"
+      >
+        <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
+        <path d="M16 14v6" />
+        <path d="M8 14v6" />
+        <path d="M12 16v6" />
+      </svg>
+
+      <h1 class="mb-4 mt-4 text-3xl font-bold text-gray-600">Weather App</h1>
     </div>
     <div class="text-center p-6 px-6 bg-white rounded-xl shadow-lg">
       <div class="flex items-center gap-2">
         <input
-          placeholder="Nome da cidade"
+          placeholder=" Search for a city"
           type="search"
           name="busca"
           id="busca"
-          class="bg-slate-300 rounded-lg focus:outline-none"
+          class="bg-slate-100 py-1 rounded-lg focus:outline-none"
         />
         <button id="btn">
           <svg
